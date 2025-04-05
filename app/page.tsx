@@ -1425,7 +1425,6 @@ const HomeContent = () => {
                                         className="h-8 px-2 text-xs rounded-full"
                                         title="إعادة التوليد"
                                     >
-                                    >
                                         <RefreshCw className="h-3.5 w-3.5" />
                                     </Button>
                                     <CopyButton text={part.text} />
