@@ -1,7 +1,7 @@
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { X, Loader2, Search } from "lucide-react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 interface SearchBoxProps {
     onSubmit: (query: string) => void;
