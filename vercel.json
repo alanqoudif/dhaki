@@ -9,6 +9,21 @@
         "app/api/**/*": {
             "memory": 1024,
             "maxDuration": 60
+        },
+        "api/raycast": {
+            "maxDuration": 60
+        },
+        "api/search": {
+            "maxDuration": 60
+        },
+        "api/upload": {
+            "maxDuration": 60
+        },
+        "api/proxy-image": {
+            "maxDuration": 60
+        },
+        "api/clean_images": {
+            "maxDuration": 60
         }
     }
 }
