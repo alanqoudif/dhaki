@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { X, Loader2, Search } from "lucide-react";
 import { useState } from "react";
 
+// مكون صندوق البحث
 interface SearchBoxProps {
     onSubmit: (query: string) => void;
     isLoading?: boolean;
