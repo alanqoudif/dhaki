@@ -264,8 +264,8 @@ const ResearchStep = ({
                                             >
                                                 <div className="flex-shrink-0 mt-1">
                                                     <Image
-                                                        src={`https://source.unsplash.com/random/?${result.topic.toLowerCase()}`} 
-                                                        alt={result.topic} 
+                                                        src={`https://source.unsplash.com/random/?${result.title.toLowerCase()}`} 
+                                                        alt={result.title} 
                                                         width={200}
                                                         height={150}
                                                         className="w-full h-full object-cover rounded-md" 
@@ -435,8 +435,8 @@ const SourcesList = ({ sources, type }: { sources: StreamUpdate['results'], type
                     <div className="flex items-start gap-3">
                         <div className="flex-shrink-0 mt-1">
                             <Image 
-                                src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
-                                alt={source.topic} 
+                                src={`https://source.unsplash.com/random/?${source.title.toLowerCase()}`} 
+                                alt={source.title} 
                                 width={200}
                                 height={150}
                                 className="w-full h-full object-cover rounded-md" 
@@ -895,8 +895,8 @@ const ReasonSearch = ({ updates }: { updates: StreamUpdate[] }) => {
                                                     <div className="flex items-start gap-2">
                                                         <div className="flex-shrink-0 mt-0.5">
                                                             <Image 
-                                                                src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
-                                                                alt={source.topic} 
+                                                                src={`https://source.unsplash.com/random/?${source.title.toLowerCase()}`} 
+                                                                alt={source.title} 
                                                                 width={200}
                                                                 height={150}
                                                                 className="w-3.5 h-3.5 rounded-lg"
@@ -953,8 +953,8 @@ const ReasonSearch = ({ updates }: { updates: StreamUpdate[] }) => {
                                                     <div className="flex items-start gap-2">
                                                         <div className="flex-shrink-0 mt-0.5">
                                                             <Image 
-                                                                src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
-                                                                alt={source.topic} 
+                                                                src={`https://source.unsplash.com/random/?${source.title.toLowerCase()}`} 
+                                                                alt={source.title} 
                                                                 width={200}
                                                                 height={150}
                                                                 className="w-3.5 h-3.5 rounded-lg"
@@ -1029,8 +1029,8 @@ const ReasonSearch = ({ updates }: { updates: StreamUpdate[] }) => {
                                                                 <div className="flex items-start gap-2">
                                                                     <div className="flex-shrink-0 mt-0.5">
                                                                         <Image 
-                                                                            src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
-                                                                            alt={source.topic} 
+                                                                            src={`https://source.unsplash.com/random/?${source.title.toLowerCase()}`} 
+                                                                            alt={source.title} 
                                                                             width={200}
                                                                             height={150}
                                                                             className="w-3.5 h-3.5 text-neutral-500"
