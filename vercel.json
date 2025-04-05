@@ -9,6 +9,10 @@
         "app/api/**/*": {
             "memory": 1024,
             "maxDuration": 60
+        },
+        "index": {
+            "memory": 1024,
+            "maxDuration": 60
         }
     }
 }
