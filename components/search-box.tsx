@@ -9,26 +9,20 @@ interface SearchBoxProps {
 }
 
 export function SearchBox({ onSubmit, isLoading = false }: SearchBoxProps) {
-    const inputRef = useRef<HTMLInputElement>(null);
     const [input, setInput] = useState("");
-
-    const handleSubmit = () => {
-        if (input.trim()) {
-            onSubmit(input.trim());
-        }
-    };
 
     return (
         <div className="relative flex items-center">
             <Input
-                ref={inputRef}
                 value={input}
                 placeholder="اسأل أي سؤال... 💭"
                 onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => {
                     if (e.key === "Enter" && !e.shiftKey) {
                         e.preventDefault();
-                        handleSubmit();
+                        if (input.trim()) {
+                            onSubmit(input.trim());
+                        }
                     }
                 }}
                 className="pr-32 font-normal"
@@ -44,7 +38,11 @@ export function SearchBox({ onSubmit, isLoading = false }: SearchBoxProps) {
                     <X className="h-4 w-4" />
                 </Button>
                 <Button
-                    onClick={handleSubmit}
+                    onClick={() => {
+                        if (input.trim()) {
+                            onSubmit(input.trim());
+                        }
+                    }}
                     disabled={!input || isLoading}
                     className="h-8 px-3 text-xs rounded-full"
                 >
