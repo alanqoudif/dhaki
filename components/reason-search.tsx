@@ -264,11 +264,11 @@ const ResearchStep = ({
                                             >
                                                 <div className="flex-shrink-0 mt-1">
                                                     <Image
-                                                        src={`https://www.google.com/s2/favicons?domain=${new URL(result.url).hostname}&sz=128`}
-                                                        alt=""
+                                                        src={`https://source.unsplash.com/random/?${result.topic.toLowerCase()}`} 
+                                                        alt={result.topic} 
                                                         width={200}
                                                         height={150}
-                                                        className="w-4 h-4 rounded-lg"
+                                                        className="w-full h-full object-cover rounded-md" 
                                                     />
                                                     <div className="hidden">
                                                         {result.source === 'web' ? 
@@ -435,11 +435,11 @@ const SourcesList = ({ sources, type }: { sources: StreamUpdate['results'], type
                     <div className="flex items-start gap-3">
                         <div className="flex-shrink-0 mt-1">
                             <Image 
-                                src={`https://www.google.com/s2/favicons?domain=${new URL(source.url).hostname}&sz=128`}
-                                alt=""
+                                src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
+                                alt={source.topic} 
                                 width={200}
                                 height={150}
-                                className="w-4 h-4 rounded-lg"
+                                className="w-full h-full object-cover rounded-md" 
                             />
                             <div className="hidden">
                                 {type === 'web' ? <FileText className="h-4 w-4 text-neutral-500" /> : 
@@ -895,8 +895,8 @@ const ReasonSearch = ({ updates }: { updates: StreamUpdate[] }) => {
                                                     <div className="flex items-start gap-2">
                                                         <div className="flex-shrink-0 mt-0.5">
                                                             <Image 
-                                                                src={`https://www.google.com/s2/favicons?domain=${new URL(source.url).hostname}&sz=128`}
-                                                                alt=""
+                                                                src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
+                                                                alt={source.topic} 
                                                                 width={200}
                                                                 height={150}
                                                                 className="w-3.5 h-3.5 rounded-lg"
@@ -953,8 +953,8 @@ const ReasonSearch = ({ updates }: { updates: StreamUpdate[] }) => {
                                                     <div className="flex items-start gap-2">
                                                         <div className="flex-shrink-0 mt-0.5">
                                                             <Image 
-                                                                src={`https://www.google.com/s2/favicons?domain=${new URL(source.url).hostname}&sz=128`}
-                                                                alt=""
+                                                                src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
+                                                                alt={source.topic} 
                                                                 width={200}
                                                                 height={150}
                                                                 className="w-3.5 h-3.5 rounded-lg"
@@ -1029,8 +1029,8 @@ const ReasonSearch = ({ updates }: { updates: StreamUpdate[] }) => {
                                                                 <div className="flex items-start gap-2">
                                                                     <div className="flex-shrink-0 mt-0.5">
                                                                         <Image 
-                                                                            src={`https://www.google.com/s2/favicons?domain=${new URL(source.url).hostname}&sz=128`}
-                                                                            alt=""
+                                                                            src={`https://source.unsplash.com/random/?${source.topic.toLowerCase()}`} 
+                                                                            alt={source.topic} 
                                                                             width={200}
                                                                             height={150}
                                                                             className="w-3.5 h-3.5 text-neutral-500"
