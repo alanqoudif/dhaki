@@ -6,15 +6,11 @@
         }
     ],
     "functions": {
-        "api/*": {
+        "api/**/*": {
             "memory": 1024,
             "maxDuration": 60
         },
-        "app/api/*": {
-            "memory": 1024,
-            "maxDuration": 60
-        },
-        "*": {
+        "app/api/**/*": {
             "memory": 1024,
             "maxDuration": 60
         }
